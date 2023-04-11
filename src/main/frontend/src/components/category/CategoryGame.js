@@ -7,18 +7,18 @@ function CategoryGame() {
 
     const [gameList, setGameList] = useState([]);
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await axios.get('/category/game1');
-    //             setGameList(response.data);
-    //         } catch (error) {
-    //             console.log(error);
-    //         }
-    //     };
-    //
-    //     fetchData();
-    // }, []);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('/category/game1');
+                setGameList(response.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const convertPrice = (price) => {
         return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
