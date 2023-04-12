@@ -1,7 +1,6 @@
 package com.hadoop.demo.Controller;
 
 import com.hadoop.demo.Model.CpuList;
-import com.hadoop.demo.Model.GameList;
 import com.hadoop.demo.Model.GpuList;
 import com.hadoop.demo.Model.RamList;
 import com.hadoop.demo.Service.*;
