@@ -24,8 +24,6 @@ public class DataController {
     private RamListService ramListService;
     @Autowired
     private CompareService compareService;
-    @Autowired
-    private GameListService gameListService;
 
 
     @GetMapping("/category/cpu1")
@@ -42,9 +40,6 @@ public class DataController {
     public List<GpuList> getAllGpuList() {
         return gpuListService.findAll();
     }
-
-    @GetMapping("/category/game1")
-    public List<GameList> getAllGameList() { return gameListService.findAll(); }
 
     @GetMapping("/mySpecCpu")
     public CpuList getMyCpu() {
